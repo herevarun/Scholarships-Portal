@@ -1,0 +1,846 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+.showall{
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+  
+  
+    
+}
+.rcros{
+    width: 25px;
+    position: absolute;
+    margin: 2%;
+    height: 2px;
+    top: 0;
+    right: 0;
+    background-color: black;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+.lcros{
+    width: 25px;
+    position: absolute;
+    margin: 2%;
+    height: 2px;
+    top: 0;
+    right: 0;
+    background-color: black;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.allshow{
+    top: 5%;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    right: 5%;
+    left:5%;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    overflow-y: scroll;
+    
+    
+
+}
+body{
+    font-family: sans-serif;
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 2%;
+    top: 2%;
+    display: none;
+}
+.bun{
+    height: 2px;
+    width: 25px;
+    background-color:black ;
+    margin: 20%;
+}
+.navbar{
+    display: grid;
+    padding: 1.3%;
+   grid: auto/auto auto auto auto auto auto auto auto;
+   
+   
+   align-items: center;
+   
+    font-weight: 550;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+       top: 3.4px;
+      left: 3.5px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #00B1EB;
+
+  }
+  .webdevelop .project{
+    height:100%;
+    width: 85%;
+    display: grid;
+    grid: auto auto / auto auto;
+    transition: 0.3s;
+    margin:5%;
+    background-color: #00B1EB;
+    border: 2px solid #0281ab;
+
+border-radius: 1rem;
+    
+    
+}
+.reveal{
+    position: relative;
+    
+    opacity: 0;
+    
+   
+}
+.reveal.active{
+    transition-duration: 1.8s;
+    opacity: 1;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        font-size: 1rem;
+        transform: rotateX(-10deg);
+
+    }
+    to {
+        opacity: 1;
+        font-size: 3.5rem;
+        transform: rotateX(0);
+
+    }
+}
+
+
+
+
+
+.webdevelop .project img{
+
+border-radius: 1rem;
+margin: 2%;
+
+
+}
+.project .content{
+margin: 2%;
+font-weight: 500;
+line-height: 1.5rem;
+text-align: center;
+}
+.project  input{
+
+border-radius: 5%;
+background-color: rgb(13, 13, 88);
+color: white;
+font-weight: bold;
+transition: 0.3s;
+font-size: .875rem;
+padding: 0.75rem;
+margin: 2%;
+
+
+border:2px solid rgb(34, 34, 106);
+
+
+}
+
+
+.project  input:hover{
+background-color: rgb(54, 54, 150);
+cursor: pointer;
+
+
+
+}
+
+.webdevelop .project span{
+
+width: 100px;
+font-size: large;
+font-weight:bold ;
+font-family: abc;
+color:white;
+
+}
+.container:hover .checkmark {
+    background-color: rgb(247, 242, 234);
+  }
+  .container:hover {
+    text-decoration: underline;
+    color:#00B1EB;
+
+  }
+.stype{
+    position: absolute;
+    border: 1.2px solid rgb(235, 235, 235);
+    background: white;
+    display: none;
+    top:10%;
+    width: 16%;
+    
+    
+   
+}
+.stype img{
+    width: 12%;
+    margin:  2%;
+    height: 18px;
+}
+.stype img:hover{
+    transform: scale(1.2);
+}
+.stype hr {
+    background-color: rgb(235, 235, 235);
+    height: 1.2px;
+    border: none;
+    margin: 1.5% 3%;
+
+}
+.stype button{
+    width: 70%;
+    height: 12%;
+    margin: 5%;
+    font-weight: 600;
+    padding: 2%;
+    border: none;
+    align-items: center;
+    cursor: pointer;
+}
+.g20{
+    background-image: url(g20.png);
+    height: 90%;
+    background-size:cover ;
+    width: 70%;
+    cursor: pointer;
+
+}
+
+.DI{
+    background-image: url(DI.png);
+    height: 100%;
+    background-size:cover ;
+    width: 70%;
+    cursor: pointer;
+
+}
+.headlogo{
+    background-image: url(Sch.png);
+    height: 200%;
+    width: 100%;
+    cursor: pointer;
+    background-size:cover;
+    
+
+}
+.schol-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+.shop-section{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-evenly;
+    
+}
+.notice-box{
+    border: solid #4e4e91;
+    border-radius: 3%;
+    width: 20%;
+    
+    
+}
+.noticeimg{
+    width: 122px;
+    height: 43px;
+    border: 2px solid rgb(235, 235, 235);
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding: 2%;
+    display: flex;
+}
+.noticeimg:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    
+
+
+}
+
+.notice-box hr{
+    background-color: rgb(235, 235, 235);
+    height: 1.2px;
+    border: none;
+
+}
+.notice-box .noticeinfo {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #4e4e91;
+    padding: 6%;
+    font-size: small;
+    
+}
+.noticeinfo:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.notice{
+    display: flex;
+}
+
+.notice-header{
+    
+    background-color:#4e4e91 ;
+    color: white;
+    font-weight: 500;
+    font-size: x-large;
+    text-align: center;
+    padding:  2% ;
+    border-top-right-radius: 6%;
+    border-top-left-radius: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+.notice-header span{
+    margin: 2%;
+}
+.noticeline{
+    background-color: rgb(85, 111, 227);
+    height: 10%;
+    padding:  2% 0;
+    display: flex;
+    align-items: center;
+    
+    
+    
+    
+}
+.socialmedia{
+align-items: center;
+margin: 5%;
+
+}
+.sm  {
+    width: 12%;
+    margin: 5%;
+
+    
+    }
+    .sm:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+
+        
+        }
+.noticeline marquee:hover{
+    text-decoration: underline;
+}
+.new{
+    background-color: #e4a605;
+    color: white;
+    font-size: 14px;
+    
+    height: 75%;
+    border-radius: 2%;
+    padding: 1.5%;
+    animation: blink 1s linear infinite;
+}
+@keyframes blink{
+0%{
+    opacity: 0;
+}
+50%{
+    opacity: 0.5;
+}
+100%{
+    opacity: 1;
+}
+}
+.seeless{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+.seeless input{
+    background-color: #14bdee;
+    border:none;
+    color: white;
+    padding: 9%;
+    border-radius: 2%;
+    margin-bottom: 5%;
+
+}
+.seeless input:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    cursor: pointer;
+    transition: 0.5s ;
+
+}
+.seeall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    
+}
+.seeall input{
+    background-color: #14bdee;
+    border:none;
+    color: white;
+    padding: 1%;
+    border-radius: 2%;
+
+}
+.seeall input:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    cursor: pointer;
+    transition: 0.5s ;
+
+}
+.box{
+    height: 325px;
+    border-radius: 2%;
+    border: solid #00B1EB;
+    width: 20%;
+    background-color: white;
+    margin:2% 0 ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+
+
+}
+.box:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: ease-in-out;
+
+}
+.box_header{
+    background-color: rgba(78,78,145,.09);
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.box_header img{
+    margin: 2%;
+   height: 80%;
+   
+   border-radius: 2%;
+}
+.time{
+    margin: 2%;
+   height: 80%;
+   width: 35%;
+   border-radius: 2%;
+   background-color: #f5d41c;
+   text-align: center;
+}
+.txt{
+    margin: 21% 5%;
+}
+.box-content {
+    color: #4e4e91;
+    margin: 5%;
+    
+}
+.box p{
+    color: rgb(173, 173, 173);
+    margin: 5% ;
+    
+    font-size: smaller;
+    
+}
+.box-content:hover{
+    text-decoration: underline;
+}
+.box-content a{
+    color: #4e4e91;
+
+    text-decoration: none;
+}
+
+.horizontal-box{
+    height: 270px;
+    width: 100%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin: 15px 22px;
+}
+.eligibility{
+    background-color: #e2f6ff;
+    height: 25%;
+    padding:  2% 0;
+    
+    
+    color: #4e4e91;
+    
+    
+}
+.eligibility span{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-weight: 700;
+    font-size: small;
+}
+.eligibility p{
+    color: rgb(139, 139, 139);
+    margin: 5% ;
+    
+    font-size: smaller;
+    
+}
+.box  input{
+
+    background-color: rgb(13, 13, 88);
+    color: white;
+    transition: 0.3s;
+    font-size: 12px;
+    padding:  2.5%;
+    margin:  5% 9%;
+    height: 100;
+    width: 80%;
+    
+    align-items: center;
+    border:2px solid rgb(34, 34, 106);
+    
+    
+    }
+    .box  input:hover{
+        background-color: rgb(54, 54, 150);
+        cursor: pointer;
+        
+        
+        
+        }
+.header {
+    background-image: url("scholarships-header.webp");
+    background-size: cover;
+    height: 470px;
+    
+   
+    
+}
+.header h1{
+    animation: transitionIn 1.75s;
+}
+#Dis_overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    
+    color: white;
+     
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.45); 
+    z-index: 2; 
+   
+  }
+  .navbar  input{
+  
+    border-radius: 9999px;
+    background-color: rgb(13, 13, 88);
+    color: white;
+    font-weight: bold;
+    
+    font-size: .875rem;
+    padding: 0.8rem 0.4rem;
+    text-align: center;
+    
+    margin:0  12%;
+    border:2px solid rgb(34, 34, 106);
+   
+
+}
+.navbar  input:hover{
+    background-color: rgb(214, 110, 30);
+    border:2px solid rgb(214, 94, 30);
+    cursor: pointer;
+
+   
+
+}
+.navbar .option{
+    padding-top: 5%;
+    height:80%;
+    width: 80%;
+    border-radius: 5%;
+    border: 3px solid white;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    z-index: 1;
+    margin: 1.4%;
+}
+
+
+.navbar .option:hover{
+    
+    cursor: pointer;
+    border-color:#00b0eba0 ;
+    color: #00B1EB;
+
+}
+.about{
+    margin: 10% 20%;
+    text-align: center;
+    animation: about 3.75s;
+
+}
+@keyframes about{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+
+    }
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+ /* Create a custom radio button */
+ .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 5%;
+    height: 15px;
+    width: 15px;
+    border: 1px solid gray;
+    border-radius: 50%;
+  }
+  .letscreate{
+    background-image: linear-gradient(white,rgb(157, 200, 255));
+    padding-bottom: 5%;
+    
+  }
+  .creators{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+   
+    
+  }
+  .creators h1{
+    margin: 5%;
+    
+  }
+  .feedback{
+    background-color: #023e93;
+    width: 50%;
+
+  }
+  .profile{
+    width: 20%;
+    
+    border-radius: 50%;
+    border:8px solid #69cfff;
+  }
+  .descrip{
+    font-size: large;
+    width: 55%;
+    line-height: 1.5;
+  }
+  .descrip p{
+    font-weight: bold;
+    font-size: x-large;
+    color: #4e4e91;
+    margin: 5%;
+  }
+.container {
+    display: block;
+    position: relative;
+   color: black;
+    font-weight:549.5;
+    margin-bottom: 12px;
+    cursor: pointer;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  footer{
+    background-image: url(scholarshipfooter.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+  }
+  .foot-pannel1{
+    background-color: #355b8a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+
+}
+.foot-pannel1:hover{
+    background-color: rgb(63, 108, 164);
+    cursor: pointer;
+}
+.foot-pannel2{
+    background-color: rgba(13, 41, 88, 0.85);
+    color: white;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.foot-pannel2 ul{
+    padding:0 45px ;
+    margin-top: 3.5rem;
+}
+.foot-pannel2 ul p{
+    font-weight: 700;
+}
+.foot-pannel2 ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color:#dddddd
+}
+.contact{
+    background-color: rgba(13, 41, 88, 0.85);
+    display: flex;
+    justify-content: right;
+    padding: 2%;
+    
+}
+.contact img{
+    width: 25px;
+    
+}
+.contact img:hover{
+    transform: scale(1.2);
+}
+.foot-pannel3{
+    background-color: rgb(33 64 117 / 85%);
+    color: white;
+    border-top: 1px solid rgba(168, 168, 168, 0.215);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    background-image: url(SCHOLARSHIPS.png);
+    height: 120px;
+    background-size: cover ;
+
+   
+    width: 120px;
+    cursor: pointer;
+}
+
+.foot-pannel4{
+    background-color: rgba(7, 40, 76, 0.85);
+    color: white;
+    height: 100px;
+    font-size: 0.75rem;
+    text-align: center;
+   
+}
+.pages{
+    
+    padding-top: 25px;
+    color: white;
+}
+.copyright{
+    padding-top: 5px;
+    
+}
+@media(max-width:1350px) {
+    .g20{
+        display: none;
+    }
+    
+}
+@media(max-width:1032px) {
+    .DI{
+        display: none;
+    }
+    .headlogo{
+        display: none;
+    }
+    
+}
+@media(max-width:650px) {
+   .navbar{
+    display: flex;
+    flex-direction: column;
+   }
+   .burger{
+    display: block;
+   }
+   .shop-section{
+    flex-direction: column;
+    align-items: center;
+   }
+   .box{
+    width: 50%;
+    margin: 5% 0;
+   }
+   .notice-box{
+    width: 50%;
+    margin: 5% 0;
+   }
+   .navh{
+    height: 52px;
+}
+.v-hidden{
+    display: none;
+}
+.creators{
+    flex-direction: column;
+
+}
+}

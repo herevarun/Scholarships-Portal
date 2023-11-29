@@ -1,2 +1,2 @@
-# Scholarships-Portal
- Portal to know about vaious scholarships
+# Scholarships
+ Portal to know about various national and international scholarships
